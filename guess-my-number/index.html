@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>🕹 Demo</title>
+  </head>
+  <body>
+    <div class="grid-box">
+      <section class="firstSection">
+        <h1 class="title">Ache o numero!</h1>
+        <h2 class="subtitle">Como jogar?</h2>
+        <div class="box-text">
+          <p>
+            O jogo consiste em tentar adivinhar o número escondido entre 1 e 20
+            no menor número possível de tentativas. Para o conseguir, são 20
+            tentativas, quanto menos tentativas, maior será a nossa pontuação
+            final. Você sempre pode tentar novamente. Boa sorte! 🤟
+          </p>
+        </div>
+        <button class="btn btn-start">Restart</button>
+      </section>
+
+      <section class="lastSection">
+        <p class="box-number">?</p>
+        <p class="text-guess">Comece a adivinhar...</p>
+
+        <div class="inputSet">
+          <input class="input" type="number" />
+          <button class="btn btn-check">Check!</button>
+        </div>
+
+        <div class="pontuations">
+          <p>🥊 Tentativas: <span class="score">20</span></p>
+          <p>🏆 Score: <span class="highScore">0</span></p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

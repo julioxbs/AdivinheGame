@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orelega One', cursive;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to top right,#ECBC68,#F4A261);
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 3rem 5rem rgb(0 0 0 / 25%);
+    max-width: 70rem;
+    margin: 0 20px;
+}
+
+.firstSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #E76F51;
+}
+
+.title {
+    text-align: center;
+    margin: 1rem 0;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    text-align: center;
+    color: #333;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+.box-text {
+    padding: 1rem 2rem;
+    
+}
+
+.box-text p {
+    background: #F4A261;
+    padding: 1rem 2rem;
+    color: #333;
+    border-radius: 1rem;
+    text-align: justify;
+}
+
+.btn {
+    width: 90px;
+    display: inline-block;
+    margin: 1rem auto;
+    
+    padding: .5rem 1rem;
+    background: #E9C46A;
+    border: 2px solid #595959;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-start {
+    width: 30%;
+}
+
+/* lastSection */
+
+.lastSection {
+    background: #E9C46A;
+    /* background: #94eb9b; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-number {
+    width: 4rem;
+    height: 3rem;
+    background: #E76F51;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-size: bold;
+    border-radius: 5px;
+}
+
+.text-guess {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.inputSet {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inputSet input {
+    width: 5rem;
+    height: 3rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.btn-check {
+    background: #E76F51;
+    color: #fff;
+}
+
+.pontuations {
+    display: flex;
+}
+
+.pontuations p {
+    margin: 1rem 1rem;
+    font-size: 1.3rem;
+}
+
+/* media */
+
+@media (max-width: 720px) {
+    .grid-box {
+        grid-template-columns: 1fr;
+    }
+}
